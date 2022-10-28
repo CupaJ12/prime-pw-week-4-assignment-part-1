@@ -15,30 +15,37 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
+  console.log(`hello ${name}!`)
   return;
 }
-// Remember to call the function to test
 
+// Remember to call the function to test
+helloName('Bob')
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+let third = 0
+function addNumbers( firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
+return firstNumber + secondNumber;
 }
+console.log(addNumbers(2,5))
+
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
 
+function multiplyThree(timesThree){
+return timesThree * 3
 }
-
+console.log(multiplyThree(4))
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -49,15 +56,23 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
-
+// let numbas = [1,3,5,6,2,3,6,89,23]
+let numbas = []
+function getLast( numarray ) {
+ let lastNumba = numarray.pop()
+  if (numarray.length == 0){
+     return ("undefined")
+  }
+  return lastNumba;
+  
+ 
 }
-
+console.log(getLast(numbas))
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  
+  for (i=0;)
 }
 
 // ----------------------
