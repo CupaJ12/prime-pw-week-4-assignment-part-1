@@ -72,9 +72,22 @@ console.log(getLast(numbas))
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  for (i=0;)
-}
+  for (i=0; i < array.length; i++){
+    if (array[i] == value){
+      return true;
+    }
+    else {
+      return false;
+    }
 
+    
+    }
+
+
+  }
+
+let lottaNumbas = [3,56,2,6,8,5,1]
+console.log(find(3, lottaNumbas))
 // ----------------------
 // Stretch Goals
 // ----------------------
