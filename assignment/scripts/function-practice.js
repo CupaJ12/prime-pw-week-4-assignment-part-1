@@ -34,10 +34,10 @@ console.log(addNumbers(2,5))
 
 // 4. Function to multiply three numbers & return the result
 
-function multiplyThree(timesThree){
-return timesThree * 3
+function multiplyThree(num1, num2, num3){
+return num1 * num2 * num3
 }
-console.log(multiplyThree(4))
+console.log(multiplyThree(4,5,6))
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -59,7 +59,7 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 // let numbas = [1,3,5,6,2,3,6,89,23]
 let numbas = []
 function getLast( numarray ) {
- let lastNumba = numarray.pop()
+ let lastNumba = numarray[numarray.length - 1]
   if (numarray.length == 0){
      return ("undefined")
   }
